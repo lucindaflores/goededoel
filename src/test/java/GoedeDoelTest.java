@@ -24,8 +24,7 @@ class GoedeDoelTest {
     // This test fails:
     @Test
     void eenNieuwDoelHeeftNogGeenOpbrengst() {
-        //assertThat(doel.getOpbrengst()).isZero();
-        assertThat(doel.getOpbrengst()).isEqualTo(BigDecimal.TEN);
+        assertThat(doel.getOpbrengst()).isZero();
     }
 
 }
