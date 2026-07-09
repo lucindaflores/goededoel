@@ -17,5 +17,11 @@ public class GoedeDoel {
         return opbrengst;
     }
 
+    /* Module 7: JaCoCo: */
+    @Override
+    public boolean equals(Object object) {
+        return object instanceof GoedeDoel ander && naam.equalsIgnoreCase(ander.naam);
+    }
+
 
 }
