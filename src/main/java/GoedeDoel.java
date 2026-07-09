@@ -3,7 +3,7 @@ import java.math.BigDecimal;
 public class GoedeDoel {
 
     private final String naam;
-    private BigDecimal opbrengst;
+    private final BigDecimal opbrengst = BigDecimal.ZERO;
 
     public GoedeDoel(String naam) {
         this.naam = naam;
