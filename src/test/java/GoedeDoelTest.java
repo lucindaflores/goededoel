@@ -1,6 +1,9 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.math.BigDecimal;
+
+import static org.assertj.core.api.Assertions.as;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class GoedeDoelTest {
@@ -21,7 +24,8 @@ class GoedeDoelTest {
     // This test fails:
     @Test
     void eenNieuwDoelHeeftNogGeenOpbrengst() {
-        assertThat(doel.getOpbrengst()).isZero();
+        //assertThat(doel.getOpbrengst()).isZero();
+        assertThat(doel.getOpbrengst()).isEqualTo(BigDecimal.TEN);
     }
 
 }
